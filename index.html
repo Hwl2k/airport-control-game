@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airport Control</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h1>ATC PANEL</h1>
+
+<button onclick="showTab('tower')">Kule</button>
+<button onclick="showTab('ground')">Yer Hizmetleri</button>
+<button onclick="showTab('flights')">Uçuş Planlama</button>
+<button onclick="showTab('gates')">Peronlar</button>
+
+</div>
+
+<div class="content">
+
+<div id="tower" class="tab active">
+<h2>Kule Kontrol</h2>
+
+<div class="plane-card">
+✈️ TK101 - İniş Bekliyor
+<button>İniş İzni</button>
+</div>
+
+<div class="plane-card">
+✈️ PC204 - Kalkış Bekliyor
+<button>Kalkış İzni</button>
+</div>
+
+</div>
+
+<div id="ground" class="tab">
+<h2>Yer Hizmetleri</h2>
+
+<div class="crew-card">
+🧳 Bagaj Ekibi
+<button>Gönder</button>
+</div>
+
+<div class="crew-card">
+⛽ Yakıt Ekibi
+<button>Gönder</button>
+</div>
+
+</div>
+
+<div id="flights" class="tab">
+<h2>Uçuş Planlama</h2>
+
+<ul>
+<li>TK101 → İstanbul</li>
+<li>PC204 → Ankara</li>
+<li>AJ550 → Londra</li>
+</ul>
+
+</div>
+
+<div id="gates" class="tab">
+<h2>Peron Yönetimi</h2>
+
+<div class="gate">A1 - TK101</div>
+<div class="gate">A2 - Boş</div>
+<div class="gate">B1 - PC204</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
